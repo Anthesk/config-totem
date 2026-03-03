@@ -109,10 +109,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-          &trans  &kp PG_UP      &kp UP    &kp MINUS  &kp LBRC    &kp RBRC  &kp EQUAL  &trans  &trans  &trans
-          &trans  &kp LEFT       &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &trans     &trans  &trans  &trans
-&kp CAPS  &trans  &kp PAGE_DOWN  &trans    &trans     &kp LPAR    &kp RPAR  &trans     &trans  &trans  &trans  &trans
-                                 &trans    &trans     &trans      &trans    &trans     &trans
+          &none  &kp PG_UP      &kp UP    &kp MINUS  &kp LBRC    &kp RBRC  &kp EQUAL  &kp UP    &kp HOME   &none
+          &none  &kp LEFT       &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp LEFT   &kp DOWN  &kp RIGHT  &none
+&kp CAPS  &none  &kp PAGE_DOWN  &none     &none      &kp LPAR    &kp RPAR  &none      &none     &kp END    &none  &none
+                                &none     &none      &none       &none     &none      &none
             >;
         };
 
@@ -133,10 +133,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4       &kp NUMBER_5       &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-        &trans        &trans        &trans        &kp C_PREV         &kp C_NEXT         &trans        &trans        &trans        &trans        &trans
-&trans  &trans        &trans        &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &trans        &trans        &trans        &trans        &trans        &kp BACKSLASH
-                                    &trans        &kp C_PLAY_PAUSE   &trans             &trans        &trans        &trans
+       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4       &kp NUMBER_5       &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+       &none         &none         &none         &kp C_PREV         &kp C_NEXT         &none         &none         &none         &none         &none
+&none  &none         &none         &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &none         &none         &none         &none         &none         &kp BACKSLASH
+                                   &none         &kp C_PLAY_PAUSE   &none              &none         &none         &none
             >;
         };
 
@@ -157,10 +157,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans  &kp KP_NUM  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9    &kp F7  &kp F8  &kp F9  &kp F12  &trans
-        &trans  &kp KP_DOT  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6    &kp F4  &kp F5  &kp F6  &kp F11  &trans
-&trans  &trans  &kp KP_N0   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &kp F1  &kp F2  &kp F3  &kp F10  &trans  &mo 4
-                            &trans           &trans           &trans             &trans  &trans  &trans
+       &none  &kp KP_NUM  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9    &kp F7  &kp F8  &kp F9  &kp F12  &none
+       &none  &kp KP_DOT  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6    &kp F4  &kp F5  &kp F6  &kp F11  &none
+&none  &none  &kp KP_N0   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &kp F1  &kp F2  &kp F3  &kp F10  &none  &mo 4
+                          &none            &none            &none              &none   &none   &none
             >;
         };
 
@@ -181,10 +181,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&studio_unlock  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                         &trans        &trans  &trans    &trans  &trans  &trans
+                &sys_reset   &bt BT_CLR  &out OUT_TOG  &none  &none         &none  &none  &none  &none  &none
+                &bootloader  &none       &none         &none  &bt BT_NXT    &none  &none  &none  &none  &none
+&studio_unlock  &none        &none       &none         &none  &bt BT_PRV    &none  &none  &none  &none  &none  &none
+                                         &none         &none  &none         &none  &none  &none
             >;
         };
 
