@@ -85,10 +85,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp Q       &kp W       &kp E        &kp R        &kp T          &kp Y      &kp U        &kp I        &kp O       &kp P
-         &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G          &kp H      &mt RSHFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SEMICOLON
-&kp ESC  &kp Z       &kp X       &kp C        &kp V        &kp B          &kp N      &kp M        &kp COMMA    &kp DOT     &kp FSLH            &kp APOS
-                                 &kp DEL      &lt 1 TAB    &lt 3 SPACE    &lt 3 RET  &lt 2 ESC    &kp BSPC
+         &kp Q      &kp W       &kp E        &kp R         &kp T          &kp Y      &kp U          &kp I        &kp O       &kp P
+         &mt TAB A  &mt LALT S  &mt LCTRL D  &mt LSHFT F   &kp G          &kp H      &mt RSHFT J    &mt RCTRL K  &mt RALT L  &mt ESCAPE SEMICOLON
+&kp ESC  &kp Z      &kp X       &kp C        &kp V         &kp B          &kp N      &kp M          &kp COMMA    &kp DOT     &kp FSLH              &kp APOS
+                                &lt 2 DEL    &kp LEFT_GUI  &lt 1 SPACE    &lt 3 RET  &kp RIGHT_GUI  &kp BSPC
             >;
         };
 
@@ -109,10 +109,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-          &none  &kp PG_UP      &kp UP    &kp MINUS  &kp LBRC    &kp RBRC  &kp EQUAL  &kp UP    &kp HOME   &none
-          &none  &kp LEFT       &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp LEFT   &kp DOWN  &kp RIGHT  &none
-&kp CAPS  &none  &kp PAGE_DOWN  &none     &none      &kp LPAR    &kp RPAR  &none      &none     &kp END    &none  &none
-                                &none     &none      &none       &none     &none      &none
+          &none  &kp PG_UP      &kp UP    &kp MINUS  &kp LBRC    &kp RBRC  &kp EQUAL   &kp UP    &kp HOME   &none
+          &none  &kp LEFT       &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp LEFT    &kp DOWN  &kp RIGHT  &none
+&kp CAPS  &none  &kp PAGE_DOWN  &none     &none      &kp LPAR    &kp RPAR  &none       &none     &kp END    &none  &none
+                                &none     &none      &none       &none     &kp ESCAPE  &none
             >;
         };
 
@@ -160,7 +160,7 @@
        &none  &kp KP_NUM  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9    &kp F7  &kp F8  &kp F9  &kp F12  &none
        &none  &kp KP_DOT  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6    &kp F4  &kp F5  &kp F6  &kp F11  &none
 &none  &none  &kp KP_N0   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &kp F1  &kp F2  &kp F3  &kp F10  &none  &mo 4
-                          &none            &none            &none              &none   &none   &none
+                          &none            &kp TAB          &none              &none   &none   &none
             >;
         };
 
