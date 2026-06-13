@@ -144,9 +144,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp NUMBER_1          &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5    &kp NUMBER_6      &kp N7           &kp N8      &kp N9      &kp N0
-        &kp RA(A)             &trans        &kp LCTRL     &kp LEFT_SHIFT  &kp RA(N0)      &kp RA(NUMBER_3)  &kp RIGHT_SHIFT  &kp RCTRL   &kp RA(N4)  &kp RA(O)
-&trans  &kp NON_US_BACKSLASH  &kp RA(F19)   &trans        &trans          &trans          &kp C_VOL_DN      &kp C_VOL_UP     &kp C_PREV  &kp C_NEXT  &kp BSLH   &kp MINUS
+        &kp NUMBER_1          &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5    &kp NUMBER_6      &kp N7           &kp N8      &kp N9            &kp N0
+        &kp RA(A)             &trans        &kp LCTRL     &kp LEFT_SHIFT  &kp RA(N0)      &kp RA(NUMBER_3)  &kp RIGHT_SHIFT  &kp RCTRL   &kp LEFT_BRACKET  &kp O
+&trans  &kp NON_US_BACKSLASH  &kp RA(F19)   &trans        &trans          &trans          &kp C_VOL_DN      &kp C_VOL_UP     &kp C_PREV  &kp C_NEXT        &kp BSLH  &kp MINUS
                                             &trans        &gif            &mo ADJ         &trans            &kp C_PP         &kp C_MUTE
             >;
         };
