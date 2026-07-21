@@ -14,6 +14,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
 #define NAV  1
@@ -67,6 +68,14 @@
             #binding-cells = <0>;
             bindings = <&none &kp H &kp E &kp L &kp L &kp O &kp W &kp O &kp R &kp L &kp D>;
             label = "HELLOWORLD";
+        };
+
+        keyTapandmiddleClick: keyTapandmiddleClick {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&mkp MCLK>, <&macro_tap>, <&kp D>;
+
+            label = "KEYTAPANDMIDDLECLICK";
         };
     };
 
@@ -196,10 +205,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp TAB     &kp I         &kp LC(LALT)  &kp O          &kp LC(F20)    &helloworld  &none  &none  &none  &none
-       &lt TVP2 L  &kp RS(LEFT)  &kp LALT      &kp LC(RIGHT)  &kp SPACE      &none        &none  &none  &none  &none
-&kp J  &kp LSHFT   &kp LC(C)     &kp BSPC      &kp LC(V)      &kp LC(F19)    &none        &none  &none  &none  &none  &none
-                                 &trans        &kp LC(F14)    &kp LC(F13)    &none        &none  &to 0
+           &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 E         &kp R             &kp T           &helloworld  &none  &none  &none  &none
+           &kp A           &kp S           &keyTapandmiddleClick  &kp F             &kp G           &none        &none  &none  &none  &none
+&lt 5 TAB  &kp Z           &kp X           &kp C                  &kp V             &kp B           &none        &none  &none  &none  &none  &none
+                                           &kp LEFT_SHIFT         &kp LEFT_CONTROL  &kp LEFT_ALT    &none        &none  &to 0
             >;
         };
 
@@ -222,10 +231,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp LC(F18)  &kp LS(I)     &kp LS(HOME)  &kp LS(O)      &kp LS(F)      &trans       &kp F7  &kp F8  &kp F9  &kp F12
-        &trans       &kp LS(LEFT)  &kp LC(F17)   &kp LS(RIGHT)  &kp RET        &helloworld  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &kp J        &kp LS(C)     &kp LC(F16)   &kp LS(V)      &kp LC(F15)    &trans       &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                   &trans        &kp LC(F12)    &kp LC(F11)    &trans       &trans  &to 0
+        &kp Y  &kp U  &kp I      &kp O       &kp P            &trans       &kp F7  &kp F8  &kp F9  &kp F12
+        &kp H  &kp J  &kp K      &kp L       &kp SEMICOLON    &helloworld  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &kp N  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH        &trans       &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                      &trans     &trans      &trans           &trans       &trans  &to 0
             >;
         };
 
