@@ -205,10 +205,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 E         &kp R             &kp T           &helloworld  &none  &none  &none  &none
-           &kp A           &kp S           &keyTapandmiddleClick  &kp F             &kp G           &none        &none  &none  &none  &none
-&lt 5 TAB  &kp Z           &kp X           &kp C                  &kp V             &kp B           &none        &none  &none  &none  &none  &none
-                                           &kp LEFT_SHIFT         &kp LEFT_CONTROL  &kp LEFT_ALT    &none        &none  &to 0
+           &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 E   &kp R             &kp T           &helloworld  &none  &none  &none  &none
+           &kp A           &kp S           &mt BACKSLASH D  &kp F             &kp G           &none        &none  &none  &none  &none
+&lt 5 TAB  &kp Z           &kp X           &kp C            &kp V             &kp B           &none        &none  &none  &none  &none  &none
+                                           &kp LEFT_SHIFT   &kp LEFT_CONTROL  &kp LEFT_ALT    &none        &none  &to 0
             >;
         };
 
